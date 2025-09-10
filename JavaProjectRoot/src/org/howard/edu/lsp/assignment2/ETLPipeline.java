@@ -1,4 +1,21 @@
-//
+//Assumptions: CSV is comma-delimited, no quotes/embedded commas; header: ProductID,Name,Price,Category.
+//Run from project root; input: data/products.csv; output: data/transformed_products.csv.
+//Design: Methods: extract() → transform() → load().
+//Order: UPPERCASE name → 10% discount if Electronics (HALF_UP, 2 dp) → recategorize to "Premium Electronics" if final > 500 → compute PriceRange from final price.
+//Uses BigDecimal for money; skips malformed rows; prints run summary.
+ 
+  //How to run:
+    //javac -d out src/org/howard/edu/lsp/assignment2/ETLPipeline.java
+    //java -cp out org.howard.edu.lsp.assignment2.ETLPipeline
+ 
+ /**
+ * AI Use:
+ * - Confirmed minimal imports for plain Java I/O (Files.newBufferedReader/newBufferedWriter) and BigDecimal HALF_UP.
+ * - Asked how to keep CSV on macOS (Numbers: File→Export To→CSV; or TextEdit: Make Plain Text, save .csv).
+ * - Prompt excerpt: "Which imports do I need, and how do I keep a CSV from becoming .numbers on Mac?"
+ * - Used: adopted imports + mac CSV steps; implementation/testing are my own.
+ */
+
 
 package org.howard.edu.lsp.assignment2;
 
