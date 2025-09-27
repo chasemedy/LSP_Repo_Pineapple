@@ -10,6 +10,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
+/** CSV read/write for products; always writes header and handles empty/missing input. */
 
 class CsvIO {
 	private static final String HEADER = "ProductID,Name,Price,Category,PriceRange";

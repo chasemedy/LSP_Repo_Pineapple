@@ -5,6 +5,9 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+/** Entry point: runs the A3 OO ETL with same behavior as A2. */
+
+
 public class App {
 	private static final Path INPUT = Paths.get("data", "products.csv");
 	private static final Path OUTPUT = Paths.get("data", "transformed_products.csv");

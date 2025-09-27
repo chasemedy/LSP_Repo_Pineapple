@@ -2,6 +2,7 @@ package org.howard.edu.lsp.assignment3;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+/** Product row model; keeps originalCategory for rules and formats to output CSV. */
 
 class Product {
 	private final int productId;
