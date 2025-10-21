@@ -1,8 +1,14 @@
-/*
- * AI Usage Reflection:
- * I used ChatGPT to help me understand how abstract classes and interfaces 
- * can work together in Java. It helped me verify that my subclasses were 
- * properly calling super(id, location) and implementing getStatus() correctly. 
- * I still wrote and tested the code myself to make sure it ran exactly as the 
- * provided Main.java required.
- */
+AI Usage Reflection:
+  I used ChatGPT to help me understand how abstract classes and interfaces 
+  can work together in Java. It helped me verify that my subclasses were 
+  properly calling super(id, location) and implementing getStatus() correctly. 
+  I still wrote and tested the code myself to make sure it ran exactly as the 
+  provided Main.java required.
+ 
+AI Excerpt: Abstract classes serve as blueprints for other classes. 
+ They define common attributes and methods that all subclasses share, 
+ but can also include abstract methods that each subclass must implement in 
+ its own way. In this project, the Device class is abstract because it provides shared
+ properties like id, location, and heartbeat, while leaving getStatus() abstract so
+ each specific device type (like DoorLock, Camera, or Thermostat) can define how
+ it reports its own status.
