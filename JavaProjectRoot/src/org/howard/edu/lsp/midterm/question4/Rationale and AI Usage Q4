@@ -1,0 +1,8 @@
+/*
+ * AI Usage Reflection:
+ * I used ChatGPT to help me understand how abstract classes and interfaces 
+ * can work together in Java. It helped me verify that my subclasses were 
+ * properly calling super(id, location) and implementing getStatus() correctly. 
+ * I still wrote and tested the code myself to make sure it ran exactly as the 
+ * provided Main.java required.
+ */
